@@ -20,7 +20,7 @@ document.getElementById('menu_btn_navbar_responsive').addEventListener('click', 
         div.backgroundColor = 'white';
     }
     else {
-        div.style.display = 'none';
+        div.display = 'none';
     }
 
 });
