@@ -53,16 +53,13 @@ document.getElementById('contact_div').addEventListener('click', function () {
 
 
 function lookContent(divStyle) {
-    console.log("in func");
     if (divStyle.display === 'none') {
-        console.log("in if");
         divStyle.display = 'block';
         divStyle.display = 'flex';
         divStyle.flexDirection = 'column';
         divStyle.gap = '10px';
     }
     else {
-        console.log("in else");
         divStyle.display = 'none';
 
     }

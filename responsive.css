@@ -77,6 +77,27 @@
     .footer {
         padding-right: 10px;
     }
+
+
+
+    /* -------------- Become Partner --------------- */
+    /* form */
+    #form {
+        padding: 12px 15px;
+    }
+
+    .h1_become_partner {
+        font-size: 30px;
+    }
+
+    .navbar_become_partner {
+        padding: 10px 10px;
+    }
+    .main_become_partner{
+        padding-left: 20px;
+    }
+
+
 }
 
 @media (max-width: 800px) {
@@ -252,7 +273,7 @@
 
     .courses_Section_6 {
         overflow-x: auto;
-        overflow-y:hidden;
+        overflow-y: hidden;
         width: 200px;
     }
 
@@ -324,6 +345,8 @@
         text-align: center;
     }
 
+
+
 }
 
 
@@ -336,4 +359,14 @@
     .h1_section_2 {
         font-size: 25px;
     }
+
+    #form {
+        width: 10vw;
+        width: 100%;
+    }
+ 
+    .main_become_partner{
+        align-items: start;
+    }
+
 }

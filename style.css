@@ -350,11 +350,13 @@
 .footer {
     color: white;
     display: flex;
-    padding: 50px 20px;
+    padding: 70px 50px;
     gap: 50px;
     background-color: #16144a;
     align-items: start;
-    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    
 }
 
 
@@ -451,7 +453,201 @@
 
 
 /* -------------------- responsive footer ------------------- */
-.container_responsive_div_footer{
+.container_responsive_div_footer {
     display: none;
 }
 
+/* ------------------- Become Partner Style ----------------- */
+
+
+.main_become_partner {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.h1_become_partner {
+    color: #374B9D;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.navbar_become_partner{
+    padding: 30px 150px;
+}
+
+
+#form {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    /* width: 61.5vw; */
+    width: 700px;
+    gap: 16px;
+    padding: 28px 150px;
+    border-radius: 10px;
+}
+
+.inputItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fileDiv {
+    background-color: white;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.fileDiv p {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    pointer-events: none;
+    color: gray;
+}
+
+.fileDiv img {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    pointer-events: none;
+    width: 20px;
+}
+
+
+
+.inputItem input,
+textarea {
+    padding: 16px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.inputItem .file {
+    padding: 13px 20px;
+
+}
+
+.inputItem textarea {
+    resize: none;
+}
+
+.inputItem input:focus {
+    border: 1px solid green;
+}
+
+.file {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.file:hover {
+    cursor: pointer;
+}
+
+.select {
+    padding: 16px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+
+}
+
+
+.addLink {
+    color: #0079E9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+.AddLink {
+    position: relative;
+}
+
+.inputImg {
+    width: 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+
+.AddLink label {
+    position: absolute;
+    left: 170px;
+    top: 15px;
+    color: #0079E9;
+}
+
+
+#nextBtn {
+    background-color: #0079E9;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+}
+
+
+
+
+/* success signed */
+
+.contentDiv {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#btnBack {
+    background-color: #0079E9;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 50px 0 20px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}

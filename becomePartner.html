@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script defer src="./becomePartnerScripts.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="navbar_become_partner">
+        <nav>
+            <img class="logo" src="https://tredu.io/assets/navbarLogo-3471f1a8.svg" alt="image">
+        </nav>
+    </header>
+
+
+   <main class="main_become_partner">
+     <!-- Become a partiner  -->
+     <h1 class="h1_become_partner">Become a partner</h1>
+
+
+     <!-- form -->
+     <form id="form" action="">
+         <h3>Personal information</h3>
+ 
+         <div class="inputItem">
+             <label for="firstname">First name</label>
+             <input placeholder="Enter your first name" name="firstname" type="text" />
+         </div>
+ 
+         <div class="inputItem">
+             <label for="lastname">Last name</label>
+             <input placeholder="Enter your last name" name="lastname" type="text" />
+         </div>
+ 
+         <div class="inputItem">
+             <label for="email">Email</label>
+             <input required placeholder="Enter your email" name="email" type="email" />
+         </div>
+ 
+         <div class="inputItem">
+             <label for="phone">Phone number</label>
+             <input placeholder="Enter your number" name="phone" type="tel" />
+         </div>
+         <!-- header -->
+ 
+         <h1>Company information</h1>
+ 
+         <div class="inputItem">
+             <label for="email">Partner Network Name*</label>
+             <input placeholder="Enter your Network Name" name="networkname" type="text" />
+         </div>
+ 
+         <div class="inputItem">
+             <label for="logo">Your logo</label>
+             <div class="fileDiv">
+                 <p>Select your logo</p>
+                 <input class="file" name="logo" type="file" />
+                 <img src="add.png" alt="file.svg" />
+             </div>
+         </div>
+ 
+         <div class="inputItem">
+             <label for="description">Description</label>
+             <textarea placeholder="Add your description" name="description" cols="30" rows="3"></textarea>
+         </div>
+ 
+         <div class="inputItem">
+             <label for="ActivityCategory">Activity Category</label>
+             <select aria-placeholder="Choose Category" class="select" name="category">
+                 <option disabled selected>Activity Category</option>
+                 <option value="frontend">Frontend</option>
+                 <option value="backend">Backend</option>
+             </select>
+         </div>
+ 
+         <!-- add link -->
+         <a class="addLink" href="">+ Add New</a>
+ 
+         <div class="inputItem">
+             <label for="ActivityCategory">Number of operational branches</label>
+             <select class="select" name="category">
+                 <option disabled selected>Number of operational branches</option>
+                 <option value="frontend">Frontend</option>
+                 <option value="backend">Backend</option>
+             </select>
+         </div>
+ 
+         <div class="inputItem">
+             <label for="ActivityCategory">School(s) which is interested to operate</label>
+             <select a class="select" name="category">
+                 <option disabled selected>chool(s) which is interested to operate</option>
+                 <option value="frontend">Frontend</option>
+                 <option value="backend">Backend</option>
+             </select>
+         </div>
+ 
+         <!-- add link -->
+         <a class="addLink" href="">+ Add New</a>
+ 
+ 
+         <!-- buttons -->
+         <div class="inputItem AddLink">
+             <label id="input1lb" for="input1">Add Facebook link</label>
+             <img id="input1img" class="inputImg"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAolBMVEUBL2v///8AL20AMGoELm4FIEn///v///0DLW8ALmMAHF8AJmUAK2rk7fL3//9whaEAImny9/nd5ekAI2eGmKmcqrwAJmAAKmIUOWcAFVQAIFsFLXMAGWHP2+YrRW4pSW4jPnG6xtNNZIatvc2ltcIAEFxabI1db5VoeZY+U3dCXYJRZI1bcYpGWoUADlE2TnV/kqoQNFkAKlXj7+p0hpcAGEsbNvXNAAAEE0lEQVR4nO3de3OiOhgG8PAmBzByU6xQxXqp69rLdrvn8v2/2iFqWVsDlp2dIWGf3zjWmfaP95lgEhKgjAHYj3ddAAAAAAAAwG9HXRcAAAAAAAAAAAAAAAAAtuCMlOP74ZPVaMA54xVmcaCy8CBNkjQt39R7GpTBui6qPc4E45TK7GEfv8ZxvN/vdrvN5vEhn9m3scmJcXkb34cjpxIp4etUkG2tQ4F8DR1X8cog3onrRsug69ra4Ww4e154rqOqr1qmzKJ+7JKBPceZ6onl3do5lu5VQQ7Kj09T0XWJnyf8oIgjz6nzlPldl/h5FPy9ds6Oro++WRSGaKa+LfUemSWHGXHyX+4bkqgwc0tmAcSEnDhN7eI4D3NLhhli/nLU8H1RvvuWhGHzYnvqk+vDzLsu8pO4/+A0R3GcO1vCMHnvXgkTWROGbsPmL4wKIyzpmsUsuhpmNbBk0AzuroYZ9SqMsCWMkJow5WnA24y5HE/vpR3jfxlmqm2Z0T/heLxYLNbr9euMWTKb0R9m3jiXRfHloBhysiVNsNS1zF6K0yoG5yTIlgUNFeZy0Pw6tWWcfOcPCPPUpzCbzJIJzHv6MI+ZsOUU5pw+zLepJedjVJ72q5HjuMqvxhlNmICR8AWpvzJ6jCHByU9lclRo52bfi+E0y8pXNvf5oOuKmxBleTyp6FYzJvF+v/9aetpsVsOuC25C9GNxXrlmBcB7W6X1IifcGZ0m/feyLS7TVEnHARncHaSTq2HOm22Uc4M76qRdmHDADW6Z5KZFGMcZp6InYVzHXd+aPNS0ahnPuZEmP2OnaBGmbJpYmrx7LretDrON0fuz8sp+zPsw0ao3Ycqe2eyVpmLdIoy7KLqut1G7MFvZdb2NWoVxJmnX9TZqF+bZ6EkztQnjurnRnRmT62sL/2dhohejOzOetOiancUXo8NQsAzPqtXsaJ41XPScGDyXURddZnlcmeiuAJpUv75L5ybvNJVhfH/4Js01S02jHzI9/d4f5F0X3EQtNalNCiGE7/vzXLPUNFoez5PVupkt2xlKsNKFWQ0MPresJwYIYyZNGE+FMXhxqR7lmq455Ha2DOlaxuIwH1vG6jCalsl9i0aXn2rCCJPX/er1KQzprp0JLbr2/xzNRtowNn7/9WHGCNM9utWGESYv/NeqCUMI0zV9mKzrsn4N3YaXs+bxtOuyfs2fEcbGOYC6F+AizXhKvD9hZgjTOXoJ3eoGU3X7rKuu0bbnIvN3+H8L92eWw03NrreYqSuz7UNJfLiLoTwl89yTKDZ6s6weZ3J3s92qV2WTWNkxHwzlB5a2y9Hp2R9vT82w2ymMOLL/mSYKUU8e0AIAAAAAAAAAAAAAAAAAAAAAAAD9QD1y9o/H7MdEj7C/euR/QRVJhojcwhsAAAAASUVORK5CYII="
+                 alt="">
+             <input id="input1" class="inputLink" type="text" />
+         </div>
+ 
+         <div class="inputItem AddLink">
+             <label id="input2lb" for="input2">Add Instagram link</label>
+             <img id="input2img" class="inputImg"
+                 src="data:image/jpeg;base64,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"
+                 alt="">
+             <input id="input2" name="fb" class="inputLink" type="text" />
+         </div>
+ 
+         <div class="inputItem AddLink">
+             <label id="input3lb" for="input3">Add Linkedin link</label>
+             <img id="input3img" class="inputImg"
+                 src="data:image/png;base64,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"
+                 alt="">
+             <input id="input3" name="fb" class="inputLink" type="text" />
+         </div>
+ 
+         <div class="inputItem AddLink">
+             <label id="input4lb" for="input4">Add Internet link</label>
+             <img id="input4img" class="inputImg"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61XZeGL6av6NiqNqucG19wRmyX_cAFtbb9w&s"
+                 alt="">
+             <input id="input4" name="fb" class="inputLink" type="text" />
+         </div>
+ 
+ 
+         <!-- selects -->
+         <div class="inputItem">
+             <label for="ActivityCategory">Target age group of activities offered</label>
+             <select a class="select" name="category">
+                 <option disabled selected>select target age group</option>
+                 <option value="frontend">Frontend</option>
+                 <option value="backend">Backend</option>
+             </select>
+         </div>
+ 
+         <div class="inputItem">
+             <label for="ActivityCategory">Certificates and qualifications of partner</label>
+             <select a class="select" name="category">
+                 <option disabled selected>Add your Certificates and qualifications</option>
+                 <option value="frontend">Frontend</option>
+                 <option value="backend">Backend</option>
+             </select>
+         </div>
+ 
+         <input id="nextBtn" type="button" value="Next">
+     </form>
+   </main>
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+
+        <div class="footer_div_1">
+            <div>
+                <img class="logo logo_footer" src="https://tredu.io/assets/logo-0332ffb6.svg" alt="logo">
+            </div>
+            <p class="p_footer">Empower Your Journey: Explore, enroll, excel</p>
+            <div class="footer_div_logos">
+                <img id="footer_logo"
+                    src="https://th.bing.com/th?q=Facebook+Icon+Black+Circle&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.6&pid=InlineBlock&mkt=en-WW&cc=AZ&setlang=en&adlt=strict&t=1&mw=247"
+                    alt="img">
+                <img id="footer_logo"
+                    src="https://th.bing.com/th?q=Facebook+Icon+Black+Circle&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.6&pid=InlineBlock&mkt=en-WW&cc=AZ&setlang=en&adlt=strict&t=1&mw=247"
+                    alt="img">
+            </div>
+            <p class="p_footer">© 2023 Tredu. All rights reserved.</p>
+        </div>
+
+        <div class="footer_content">
+            <div class="footer_div_2">
+                <a class="a_footer">About</a>
+                <a class="a_footer">How it work</a>
+                <a class="a_footer">Home</a>
+                <a class="a_footer">Test</a>
+            </div>
+
+            <div class="footer_div_3">
+                <a class="a_footer">Contact us</a>
+                <a class="a_footer">testing@gmail.com</a>
+                <p>7788</p>
+                <p>adress</p>
+            </div>
+
+        </div>
+        <div class="footer_div_4">
+            <h1 class="h1_footer">Join our Newsletter</h1>
+            <div class="btn_input_footer">
+                <input class="input_footer" type="text" placeholder="your gmail">
+                <button class="btn_footer" type="submit">Subscribe</button>
+            </div>
+        </div>
+
+
+        <!-- ------------------ responsive ----------------------->
+
+        <div class="container_responsive_div_footer">
+            <div id="about_div" class="responsive_div_footer">
+                <p>About</p>
+                <i id="about_btn" class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div id="about_div_content" class="about_div_content">
+                <a class="a_footer_responsive" href="">How it works</a>
+                <a class="a_footer_responsive" href="">Home</a>
+                <a class="a_footer_responsive" href="">Contacts</a>
+            </div>
+            <div id="contact_div" class="responsive_div_footer">
+                <p>Contact</p>
+                <i id="contact_btn" class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div id="contact_div_content" class="about_div_content">
+                <a class="a_footer_responsive" href="">pervinagayev28@gmail.com</a>
+                <a class="a_footer_responsive" href="">*9266</a>
+                <a class="a_footer_responsive" href="">Step IT Academy</a>
+            </div>
+
+            <div class="responsive_div_footer_bottom">
+                <div class="sub_responsive_div_footer_bottom">
+                    <div>
+                        <img class="logo logo_footer" src="https://tredu.io/assets/logo-0332ffb6.svg" alt="logo">
+                    </div>
+
+                    <div class="footer_div_logos">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram footer_logo"></i>
+                    </div>
+                </div>
+
+                <p class="p_footer sub_p_footer">Empower Your Journey: Explore, enroll, excel</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
