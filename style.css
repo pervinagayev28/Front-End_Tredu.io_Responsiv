@@ -35,9 +35,6 @@
     display: none;
 }
 
-.nav_links_responsive {
-    display: none;
-}
 
 
 /* -------------ended in response way ------- */
@@ -345,7 +342,9 @@
 
 /* -------------- footer -------------- */
 
-
+.a_footer {
+    color: white;
+}
 
 .footer {
     color: white;
@@ -356,7 +355,7 @@
     align-items: start;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: space-between;
-    
+
 }
 
 
@@ -476,7 +475,7 @@
 }
 
 
-.navbar_become_partner{
+.navbar_become_partner {
     padding: 30px 150px;
 }
 
@@ -559,48 +558,52 @@ textarea {
     cursor: pointer;
 }
 
-.select {
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
     padding: 16px 20px;
     border: 1px solid lightgray;
     border-radius: 10px;
 }
 
-select {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
+/* ------------------ link inputs -------------- */
 
+.link_input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
 }
 
-
-.addLink {
-    color: #0079E9;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.input_div_logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
 }
 
-
-
-
-
-
-.AddLink {
+.input_container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.inputImg {
-    width: 30px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    position: absolute;
-    top: 10px;
-    left: 130px;
+.icon_input {
+    font-size: 20px;
 }
 
-.AddLink label {
+.input_div_logos {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    color: hsl(209, 100%, 46%);
+    font-size: 15px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
-    left: 170px;
-    top: 15px;
-    color: #0079E9;
 }
+
 
 
 #nextBtn {
@@ -625,7 +628,24 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 20px 50px;
+}
+
+.rightSide p {
+    width: 25vw;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.signedH1 {
+    color: #0079E9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
 }
 
 #btnBack {
@@ -637,17 +657,4 @@ select {
     color: white;
     display: flex;
     justify-content: center;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-
-
-.rightSide {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
 }

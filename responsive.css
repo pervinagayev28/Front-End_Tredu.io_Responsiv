@@ -93,7 +93,25 @@
     .navbar_become_partner {
         padding: 10px 10px;
     }
-    .main_become_partner{
+
+    /* ----------------- succsessed enterance page ----------- */
+    .main {
+        padding: 20px 0px;
+    }
+
+    .rightSide p {
+        width: 30vw;
+    }
+
+    .registerCompleteimg {
+        width: 350px;
+    }
+
+    .signedH1 {
+        font-size: 20px;
+    }
+
+    .main_become_partner {
         padding-left: 20px;
     }
 
@@ -149,7 +167,7 @@
 
     .navbar_btn_div_responsive {
         display: flex;
-        gap: 2vw;
+        gap: 5vw;
     }
 
 
@@ -345,6 +363,27 @@
         text-align: center;
     }
 
+    /* ------------------------ succsessed enterance page -------------- */
+
+
+    .contentDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightSide {
+        align-items: center;
+        width: 80vw;
+        gap: 20px;
+    }
+
+    .rightSide p{
+        width:100%;
+    }
+    .signedH1 {
+        text-align: center;
+    }
 
 
 }
@@ -364,9 +403,10 @@
         width: 10vw;
         width: 100%;
     }
- 
-    .main_become_partner{
+
+    .main_become_partner {
         align-items: start;
     }
+
 
 }

@@ -97,7 +97,7 @@ let temp = 0;
 
 document.querySelector('#btnRight').addEventListener('click', () => {
     ChangeContent(courses[(temp + 1) === 3 ? temp = 0 : ++temp]);
-    
+
 });
 
 document.querySelector('#btnLeft').addEventListener('click', () => {
@@ -109,9 +109,23 @@ document.querySelector('#btnLeft').addEventListener('click', () => {
 function ChangeContent(element) {
     let i = 1;
     element.forEach(course => {
-        document.querySelector('#img_course_'+i+'_section_6').src = course.img;
-        document.querySelector('#h'+i+'_section_6').textContent = course.Kind;
-        document.querySelector('#p'+(i++)+'_section_6').textContent = course.Content;
+        document.querySelector('#img_course_' + i + '_section_6').src = course.img;
+        document.querySelector('#h' + i + '_section_6').textContent = course.Kind;
+        document.querySelector('#p' + (i++) + '_section_6').textContent = course.Content;
     });
 
 }
+
+// ------------------ change page actions -------------
+
+document.getElementById('explore_btn').addEventListener('click', function () {
+    location.href = "#Courses"
+});
+
+// --------------- subscription button ------------
+
+document.querySelector('.btn_footer').addEventListener('click', function () {
+    alert("it is a fake site");
+});
+
+
